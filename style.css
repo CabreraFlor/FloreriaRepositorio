@@ -172,7 +172,7 @@ h3 {
 }
 
 .image-container:hover {
-    transform: scale(1.1); /* Cuando pasas el mouse sobre .image-container, la imagen se agranda un 10% */
+    transform: scale(1.1); /* Animacion cuando pasas el mouse*/
 }
 
 .image-container p {
@@ -187,7 +187,7 @@ h3 {
 
 }
 
-/*INICIO DE SECTION CONTACTO*/
+/*INICIO DE LA SECCION CONTACTO*/
 
 
 #contacto {
@@ -195,6 +195,9 @@ h3 {
     padding: 40px;
     text-align: center;
 }
+
+
+/*Arreglos del form*/
 
 .contact-form {
     display: inline-block;
@@ -220,7 +223,9 @@ input,textarea {
     border-radius: 3px;
 }
 
-button {
+/*Arreglos del boton del form*/
+
+button { 
     background-color: #007BFF;
     color: #fff;
     border: none;
@@ -230,18 +235,20 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /*Animacion del boton*/
 }
 
-.contact-info {
+/*Arreglos de Datos de Contacto */
+
+.nosotros-info {
     background-color:#e3b8e3;
     display: inline-block;
-    text-align: left;
+    text-align:left;
     width: 45%;
     margin-left: 5%;
 }
 
-/*inicio de footer*/
+/*INICIO DEL FOOTER*/
 
 .final-estilo{
     font-size: 1em;
@@ -258,3 +265,48 @@ button:hover {
 
 }
 
+/* RESPONSIVE DESIGN*/
+
+
+@media (min-width: 320px) and (max-width: 768px) {
+    nav{
+        Margin-bottom: 0;
+    }
+
+    header img { /*Arreglos del logo*/
+        height: 150%; 
+        width: 41%;
+    }
+
+    .menu ul { /* Arreglos de  los elementos del menú  */
+        flex-direction: column; 
+        padding: 10px; 
+    }
+
+    .menu li {
+        margin: 5px 0; /* Espacio entre elementos del menú */
+    }
+
+    .banner img { /*Arreglos del banner*/
+        height: 100%; 
+    }
+
+    .titulo-principal{
+        font-size: 2em;
+        padding-right: 20%;
+        padding-top: 0;
+    }
+
+    .titulo-articulo{
+        padding-inline-start: 5%;
+        padding-inline-end: 80%;
+        text-align: justify;
+    }
+
+    .parrafo{
+        font-size: small;
+        padding-inline-start: 35%;
+        padding-inline-end: 35%;
+        display:inline-flex;
+    }
+}
