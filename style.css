@@ -159,6 +159,9 @@ h3 {
     align-items: center;
     margin: 2%;
     padding: 2%;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s;
 }
 .image-container img {
     border-radius: 50%; 
@@ -168,6 +171,9 @@ h3 {
     margin: 1.5% ; 
 }
 
+.image-container:hover {
+    transform: scale(1.1); /* Cuando pasas el mouse sobre .image-container, la imagen se agranda un 10% */
+}
 
 .image-container p {
     margin-top: 5px; 
