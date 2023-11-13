@@ -68,15 +68,15 @@
                 <form action="enviar.php" method="post">
                     <div class="form-grupo">
                         <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" name="nombre" required>
+                        <input type="text" id="nombre" placeholder="nombre" minlength="3" required>
                     </div>
                     <div class="form-grupo">
                         <label for="email">Correo electrónico:</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" placeholder="email" required>
                     </div>
                     <div class="form-grupo">
                         <label for="mensaje">Mensaje:</label>
-                        <textarea id="mensaje" name="mensaje" required></textarea>
+                        <textarea id="mensaje" placeholder="mensaje" required></textarea>
                     </div>
                     <button type="Enviar">Enviar</button>
                 </form>
@@ -92,5 +92,6 @@
     <footer class="Final">
         <p class="final-estilo"> &copy;2023 mi sitio web</p>
     </footer>
+    <script src="code.js"></script>
 </body>
 </html>
